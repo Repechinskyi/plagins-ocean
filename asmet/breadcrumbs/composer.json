@@ -1,0 +1,32 @@
+{
+  "name": "asmet/breadcrumbs",
+  "description": "Breadcrumbs",
+  "license": "MIT",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Nick Asmetkin",
+      "email": "asmetkin_nick@mail.ru"
+    }
+  ],
+  "repositories": [
+
+  ],
+  "require": {
+    "asmet/friendlyurls": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Asmet\\Breadcrumbs\\": "src"
+
+    },
+    "files": ["helpers.php"]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Asmet\\Breadcrumbs\\BreadcrumbsServiceProvider"
+      ]
+    }
+  }
+}

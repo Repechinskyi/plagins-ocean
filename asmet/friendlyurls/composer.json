@@ -1,0 +1,27 @@
+{
+  "name": "asmet/friendlyurls",
+  "description": "FriendlyURLs",
+  "license": "MIT",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Nick Asmetkin",
+      "email": "asmetkin_nick@mail.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Asmet\\FriendlyURLs\\": "src"
+    }
+  },
+  "require": {
+    "behat/transliterator": "^1.2"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Asmet\\FriendlyURLs\\FriendlyURLsServiceProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.file-upload {
+  .upload-form-widget {
+    outline: 2px dashed grey; /* the dash box */
+    outline-offset: -10px;
+    background: lightcyan;
+    color: dimgray;
+    padding: 10px 10px;
+    min-height: 100px; /* minimum height */
+    position: relative;
+    cursor: pointer;
+    input[type="file"] {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &:hover {
+      background: lightblue; /* when mouse over to the drop zone, change color */
+    }
+    .text {
+      font-size: 1.2em;
+      text-align: center;
+      padding: 25px 0;
+    }
+    .input-file {
+      opacity: 0; /* invisible but it's there! */
+      width: 100%;
+      min-height: 100px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+  .file-upload-files {
+    margin-top: 15px;
+    .item {
+      width: 80px;
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      margin: 0 5px 5px 0;
+      height: auto;
+      vertical-align: top;
+      .saved-file-delete,
+      .new-file-delete {
+        width: 23px;
+        height: 23px;
+        float: right;
+        margin-bottom: -23px;
+        z-index: 5;
+        position: relative;
+        text-align: center;
+        color: red;
+        background: white;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-size: 14px;
+        line-height: 17px;
+        cursor: pointer;
+      }
+      .saved-file-edit {
+        @extend .saved-file-delete;
+        float: left;
+        color: blue;
+        background-image: url(../images/edit.svg);
+        background-repeat: no-repeat;
+        background-position: 3px 2px;
+        background-size: 15px;
+      }
+      .thumb {
+        width: 80px;
+        height: 80px;
+      }
+      input {
+        width: 80px;
+        height: 20px;
+      }
+      &.spinner {
+        &:after {
+          content: '';
+          top: -10px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../images/wedges.svg) no-repeat center center;
+          background-size: 90% !important;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

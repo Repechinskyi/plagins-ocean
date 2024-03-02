@@ -1,0 +1,35 @@
+{
+  "name": "vaden/ajaxcatalog",
+  "description": "Quick way to setup pages with huge amount of filters and sorts based on DB data",
+  "license": "MIT",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Vaden"
+    },
+    {
+      "name": "yakim"
+    },
+    {
+      "name": "Asmet"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "asmet/seomodule": "^1.0",
+    "asmet/ckeditor": "^1.0",
+    "asmet/breadcrumbs": "^1.0",
+    "behat/transliterator": "^1.0",
+    "laracasts/utilities": "^3.0",
+    "predis/predis": "^1.1"
+  },
+  "repositories": [
+
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vaden\\AjaxCatalog\\": "src/"
+    },
+    "files": ["ajax_catalog_helpers.php"]
+  }
+}

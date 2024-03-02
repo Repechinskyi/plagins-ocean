@@ -1,0 +1,37 @@
+{
+  "name": "yakim/file-upload",
+  "description": "Загрузка и менеджур файлов для Laravel 5",
+  "license": "MIT",
+  "version": "1.0",
+  "require": {
+    "approached/laravel-image-optimizer": "^2.3",
+    "behat/transliterator": "^1.2",
+    "mariuzzo/laravel-js-localization": "^1.4",
+    "intervention/image": "^2.4"
+  },
+  "authors": [
+	{
+      "name": "Vaden"
+    },
+    {
+      "name": "yakim"
+    },
+    {
+      "name": "Asmet"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Yakim\\FileUpload\\": "src"
+    },
+    "files": ["file_upload_helpers.php"]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Yakim\\FileUpload\\FileUploadServiceProvider",
+        "Yakim\\FileUpload\\FileUploadEventServiceProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "asmet/ckeditor",
+  "description": "ckeditor",
+  "license": "MIT",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Nick Asmetkin",
+      "email": "asmetkin_nick@mail.ru"
+    }
+  ],
+  "repositories": [
+
+  ],
+  "require": {
+    "yakim/file-upload": "^1.0"
+  },
+  "autoload": {
+    "files": [
+      "ckeditor.php"
+    ],
+    "psr-4": {
+      "Asmet\\Ckeditor\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Asmet\\Ckeditor\\CkeditorServiceProvider"
+      ]
+    }
+  }
+}

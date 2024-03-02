@@ -1,0 +1,26 @@
+{
+  "name": "asmet/seomodule",
+  "description": "SeoModule",
+  "license": "MIT",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Nick Asmetkin",
+      "email": "asmetkin_nick@mail.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Asmet\\SeoModule\\": "src"
+
+    },
+    "files": ["helpers.php"]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Asmet\\SeoModule\\SeoServiceProvider"
+      ]
+    }
+  }
+}
